@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', "sans-serif";
+    background-color: #F8F9FA;
+    color: #152536;
+}
+
+.custom-header {
+    background-color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+
+.container-main,
+.custom-header-text {
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-custom-main-outline {
+    background-color: #fff;
+    border: 1px solid #F24F4F;
+}

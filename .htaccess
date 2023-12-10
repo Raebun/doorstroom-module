@@ -1,0 +1,15 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /cookbook/
+
+# Allow access to the specified URLs
+RewriteRule ^$ index.php [L]
+RewriteRule ^index\.php$ - [L]
+
+# Block direct access to all PHP files
+RewriteRule \.php$ - [F,L]
+
+# Redirect all other requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
